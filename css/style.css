@@ -1,0 +1,141 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  min-width: 1200px;
+  min-height: 1200px;
+}
+
+/*Временно убрал отступы для инлайн блоков, потом заменю нормалайзом*/
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+/************** Общие стили для всех страниц **************/
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 880px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main-header {
+  margin-bottom: 80px;
+}
+
+.header-logo {
+  float: left;
+  width: 139px;
+  height: 56px;
+}
+
+.main-nav {
+  float: left;
+  width: 400px;
+  min-height: 15px;
+  margin-left: 180px;
+}
+
+.user-block {
+  float: right;
+  width: 100px;
+  min-height: 15px;
+}
+
+
+
+/************** Сетка главной страницы **************/
+.features {
+  max-height: 380px;
+  padding-bottom: 80px;
+}
+
+.feature-item {
+  float: left;
+  width: 240px;
+  min-height: 299px;
+  margin-right: 80px;
+}
+
+.feature-item:last-child {
+  margin-right: 0;
+}
+
+.about-us {
+  max-height: 472px;
+  padding-top: 59px;
+  padding-bottom: 72px;
+}
+
+.about-us-left {
+  float: left;
+  width: 620px;
+  min-height: 341px;
+}
+
+.about-us-right {
+  float: right;
+  width: 240px;
+  min-height: 341px;
+}
+
+.partners {
+  max-height: 166px;
+  padding-top: 45px;
+  padding-bottom: 31px;
+  margin-bottom: 85px;
+}
+
+.partners-logo {
+  display: inline-block;
+  width: 220px;
+  min-height: 90px;
+  margin-right: 100px;
+  vertical-align: middle;
+}
+
+.partners-logo:last-child {
+  margin-right: 0;
+}
+
+/*не забыть про отступы между строками и кнопкой*/
+.contacts-and-map {
+  position: relative;
+  max-height: 417px;
+  overflow: hidden;
+}
+
+.contacts {
+  position: absolute;
+  top: 88px;
+  width: 207px;
+  height: 183px;
+  padding-top: 31px;
+  padding-bottom: 26px;
+  padding-left: 20px;
+  padding-right: 23px;
+}
+
+.main-footer {
+  min-height: 216px;
+  line-height: 216px;
+}
+
+.footer-social {
+  float: left;
+  width: 250px;
+  min-height: 65px;
+  margin-right: 70px;
+}
+
+.footer-promo {
+  float: right;
+  width: 550px;
+  min-height: 65px;
+}
