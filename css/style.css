@@ -97,12 +97,17 @@ body {
 
 .btn {
   display: inline-block;
-  padding: 12px 40px;
+  padding: 10px 40px;
 
+  font-size: 12px;
+  line-height: 18px;
   color: #fff;
   text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
-  border-radius: 2px;
+
+  border-radius: 5px;
+  vertical-align: baseline;
 }
 
 .main-header {
@@ -126,18 +131,18 @@ body {
 .header-logo {
   width: 139px;
   height: 56px;
+  margin: 0;
 }
 
 .main-nav {
-  float: left;
+  float: right;
 
-  width: 400px;
-  margin-left: 183px;
+  max-width: 700px;
+  padding-top: 26px;
 }
 
 .main-nav ul {
   margin: 0;
-  margin-top: 26px;
   padding: 0;
 
   font-size: 0;
@@ -158,6 +163,10 @@ body {
   margin-right: 0;
 }
 
+.main-nav .active {
+  border-bottom: 2px solid #fb565a;
+}
+
 .main-nav a {
   color: #000;
   text-decoration: none;
@@ -167,22 +176,18 @@ body {
   color: #f87f81;
 }
 
-.main-nav a:active {
+.main-nav a:active,
+.main-nav .active:active {
   color: #a8a8a8;
-}
-
-.user-block {
-  float: right;
-
-  width: 110px;
+  border-bottom-color: #a8a8a8;
 }
 
 .trash {
   position: relative;
 
   display: inline-block;
-  margin-top: 26px;
-  padding-left: 34px;
+  margin-left: 20px;
+  padding-left: 25px;
 
   font-size: 14px;
   line-height: 30px;
@@ -192,12 +197,137 @@ body {
   vertical-align: top;
 }
 
-.user-block a:hover {
+.trash::before {
+  content: "\e800";
+  position: absolute;
+  left: 0;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 16px;
+  font-family: "symbols-nerds";
+  color: #bdbdbd;
+}
+
+.trash:hover::before {
   color: #f87f81;
 }
 
-.user-block a:active {
+.trash:active::before {
   color: #a8a8a8;
+}
+
+.header-slider {
+  position: relative;
+
+  width: 880px;
+  height: 310px;
+}
+
+.header-slider input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.header-slider .slider-controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  z-index: 100;
+
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+
+  text-align: center;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+
+  background: white;
+  border: 3px solid white;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #c1c1c1;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.slide-text {
+  width: 470px;
+  padding: 30px 0;
+  color: #283136;
+}
+
+.slide-title {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+  color: #000;
+}
+
+.slide .btn {
+  display: block;
+  width: 240px;
+  margin-top: 25px;
+  padding-left: 0;
+  padding-right: 0;
+
+  background-color: #fb565a;
+}
+
+.slide {
+  display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+
+.slide:nth-child(1) {
+  background-image: url(../images/slider-bg.png);
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+
+.slide:nth-child(2) {
+  background-image: url(../images/slider-bg-2.png);
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+
+.slide:nth-child(3) {
+  background-image: url(../images/slider-bg-3.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
 }
 
 .feature-logo {
@@ -232,12 +362,39 @@ body {
   background-color: #fb565a;
 }
 
+.feature-item .btn-site:hover {
+  background-color: #d6494d;
+}
+
+.feature-item .btn-site:active {
+  background-color: #b63538;
+  box-shadow: inset 0 2px 2px rgba(0,0,0,.3);
+}
+
 .feature-item .btn-apps {
   background-color: #00ca74;
 }
 
+.feature-item .btn-apps:hover {
+  background-color: #01a25e;
+}
+
+.feature-item .btn-apps:active {
+  background-color: #009053;
+  box-shadow: inset 0 2px 2px rgba(0,0,0,.3);
+}
+
 .feature-item .btn-presents {
   background-color: #efc84a;
+}
+
+.feature-item .btn-presents:hover {
+  background-color: #d6ae2c;
+}
+
+.feature-item .btn-presents:active {
+  background-color: #c09b24;
+  box-shadow: inset 0 2px 2px rgba(0,0,0,.3);
 }
 
 .about-us-left b {
@@ -309,6 +466,10 @@ body {
 }
 
 .partners-logo:hover {
+  opacity: 1;
+}
+
+.partners-logo:active {
   opacity: 1;
 }
 

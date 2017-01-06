@@ -13,33 +13,56 @@
     <div class="container">
       <!-- Лого и главное меню -->
       <div class="header-top clearfix">
-        <div class="header-logo">
-          <img src="images/logo.png" alt="NЁRDS" width="139" height="56">
-        </div>
+        <figure class="header-logo">
+          <a href="#">
+            <img src="images/logo.png" alt="NЁRDS" width="139" height="56">
+          </a>
+        </figure>
         <nav class="main-nav">
           <ul>
-            <li><a href="#">Студия</a></li>
+            <li class="active"><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
             <li><a href="#">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
+            <a class="trash" href="#">Корзина</a>
           </ul>
         </nav>
-        <div class="user-block">
-          <a class="trash" href="#">Корзина</a>
-        </div>
       </div>
       <!-- Слайд -->
-      <div class="header-slide">
-        <div class="slide-promo">
-          <b class="slide-promo-title">Долго, дорого, скрупулезно.</b>
-          <p>
-            Математически выверенный дизайн для вашего сайта или мобильного приложения.
-          </p>
-          <a class="btn btn-slide" href="#">Узнать больше</a>
+      <div class="header-slider">
+        <input type="radio" id="btn-1" name="toogle" checked>
+        <input type="radio" id="btn-2" name="toogle">
+        <input type="radio" id="btn-3" name="toogle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
         </div>
-        <figure class="slide-logo">
-          <img src="#" alt="Дизайн для вашего сайта или мобильного приложения" width="338" height="231">
-        </figure>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого, скрупулезно.</div>
+              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любите ли вы математику, как любим ее мы?</div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только наркотики, только хардкор!</div>
+              <p>Все дизайнерские решения в нашей компании принимаются<br>только под воздействием качественных галлюциногенов.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
