@@ -37,7 +37,7 @@
     <div class="sort-and-catalog clearfix">
       <!-- Форма сортировки -->
       <div class="sorting">
-        <form action="#" method="get">
+        <form class="sorting-form" action="#" method="get">
           <fieldset>
             <legend>Сетка:</legend>
             <ul class="layout-choice-list">
@@ -64,7 +64,7 @@
                 <label for="slider">Слайдер</label>
               </li>
               <li>
-                <input id="feature-block" type="checkbox" name="features-list">
+                <input id="feature-block" type="checkbox" name="features-list" disabled>
                 <label for="feature-block">Блок преимуществ</label>
               </li>
               <li>
@@ -89,115 +89,109 @@
       <div class="catalog">
         <div class="sorting-block">
           <span class="sorting-title">Сортировать:</span>
-          <a href="#">По цене</a>
-          <a href="#">По типу</a>
-          <a href="#">По функционалу</a>
-          <div class="arrow-block">
-            <a class="arrow-down" href="#"></a>
-            <a class="arrow-up" href="#"></a>
+          <a class="sorting-option" href="#">По цене</a>
+          <a class="sorting-option" href="#">По типу</a>
+          <a class="sorting-option" href="#">По функционалу</a>
+          <div class="catalog-arrow-block">
+            <a class="catalog-arrow-down catalog-arrow-active" href="#"></a>
+            <a class="catalog-arrow-up" href="#"></a>
           </div>
         </div>
-
-        <a href="#">
-          <div class="catalog-item">
-            <div class="head-line">
-              <i></i>
-              <i></i>
-              <i></i>
-            </div>
-            <img src="#" alt="Aviator" width="240" height="240">
-            <div class="price-and-desc price-and-desc-aviator">
-              <h2 class="item-title">Aviator</h2>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="btn" href="#">10000 р.</a>
-            </div>
+        <a class="catalog-item" href="#">
+          <div class="catalog-item-head">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <figure class="catalog-image">
+            <img src="images/catalog-aviator.jpg" alt="Aviator" width="240" height="240">
+          </figure>
+          <div class="price-and-desc">
+            <h2 class="item-title">Aviator</h2>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <span class="btn">10000 р.</span>
           </div>
         </a>
-
-        <a href="#">
-          <div class="catalog-item">
-            <div class="head-line">
-              <i></i>
-              <i></i>
-              <i></i>
-            </div>
-            <img src="#" alt="Sunset" width="240" height="240">
-            <div class="price-and-desc price-and-desc-sunset">
-              <h2 class="item-title">Sunset</h2>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="btn" href="#">10000 р.</a>
-            </div>
+        <a class="catalog-item" href="#">
+          <div class="catalog-item-head">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <figure class="catalog-image">
+            <img src="images/catalog-sunset.jpg" alt="Sunset" width="240" height="240">
+          </figure>
+          <div class="price-and-desc">
+            <h2 class="item-title">Sunset</h2>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <span class="btn">10000 р.</span>
           </div>
         </a>
-
-        <a href="#">
-          <div class="catalog-item">
-            <div class="head-line">
-              <i></i>
-              <i></i>
-              <i></i>
-            </div>
-            <img src="#" alt="Forte" width="240" height="240">
-            <div class="price-and-desc price-and-desc-forte">
-              <h2 class="item-title">Forte</h2>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="btn" href="#">10000 р.</a>
-            </div>
+        <a class="catalog-item" href="#">
+          <div class="catalog-item-head">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <figure class="catalog-image">
+            <img src="images/catalog-forte.jpg" alt="Forte" width="240" height="240">
+          </figure>
+          <div class="price-and-desc">
+            <h2 class="item-title">Forte</h2>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <span class="btn">10000 р.</span>
           </div>
         </a>
-
-        <a href="#">
-          <div class="catalog-item">
-            <div class="head-line">
-              <i></i>
-              <i></i>
-              <i></i>
-            </div>
-            <img src="#" alt="Modern Organic Thai" width="240" height="240">
-            <div class="price-and-desc price-and-desc-thai">
-              <h2 class="item-title">Modern Organic Thai</h2>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="btn" href="#">10000 р.</a>
-            </div>
+        <a class="catalog-item" href="#">
+          <div class="catalog-item-head">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <figure class="catalog-image">
+            <img src="images/catalog-thai.jpg" alt="Modern Organic Thai" width="240" height="240">
+          </figure>
+          <div class="price-and-desc">
+            <h2 class="item-title">Modern Organic Thai</h2>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <span class="btn">10000 р.</span>
           </div>
         </a>
-
-        <a href="#">
-          <div class="catalog-item">
-            <div class="head-line">
-              <i></i>
-              <i></i>
-              <i></i>
-            </div>
-            <img src="#" alt="Avenue" width="240" height="240">
-            <div class="price-and-desc price-and-desc-avenue">
-              <h2 class="item-title">Avenue</h2>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="btn" href="#">10000 р.</a>
-            </div>
+        <a class="catalog-item" href="#">
+          <div class="catalog-item-head">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <figure class="catalog-image">
+            <img src="images/catalog-avenue.jpg" alt="Avenue" width="240" height="240">
+          </figure>
+          <div class="price-and-desc">
+            <h2 class="item-title">Avenue</h2>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <span class="btn">10000 р.</span>
           </div>
         </a>
-
-        <a href="#">
-          <div class="catalog-item">
-            <div class="head-line">
-              <i></i>
-              <i></i>
-              <i></i>
-            </div>
-            <img src="#" alt="Dovetail" width="240" height="240">
-            <div class="price-and-desc price-and-desc-dovetail">
-              <h2 class="item-title">Dovetail</h2>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="btn" href="#">10000 р.</a>
-            </div>
+        <a class="catalog-item" href="#">
+          <div class="catalog-item-head">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <figure class="catalog-image">
+            <img src="images/catalog-dovetail.jpg" alt="Dovetail" width="240" height="240">
+          </figure>
+          <div class="price-and-desc">
+            <h2 class="item-title">Dovetail</h2>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <span class="btn">10000 р.</span>
           </div>
         </a>
         <div class="catalog-paginator">
           <span class="btn btn-active">1</span>
           <a class="btn" href="#">2</a>
           <a class="btn" href="#">3</a>
-          <a class="btn" href="#">Следующая</a>
+          <a class="btn btn-next" href="#">Следующая</a>
         </div>
       </div>
     </div>
