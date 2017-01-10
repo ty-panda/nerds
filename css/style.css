@@ -825,9 +825,24 @@ body {
       width: 240px;
       height: 30px;
 
+      font-size: 0;
+
       background-color: #f1f1f1;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
+    }
+
+      .catalog-item-head .head-circles {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+
+        color: #fff;
+        font-size: 10px;
+      }
+
+    .catalog-item:hover .catalog-item-head {
+      background-color: #797979;
     }
 
     .catalog-item .catalog-image {
@@ -843,7 +858,46 @@ body {
 
     .catalog .price-and-desc {
       position: absolute;
+      left: 20px;
+      bottom: 20px;
+
       display: none;
+      width: 140px;
+      min-height: 140px;
+      padding: 30px;
+
+      text-align: center;
+      background-color: #fff;
+    }
+
+      .price-and-desc .item-title {
+        margin-top: 0;
+
+        color: #000;
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: uppercase;
+      }
+
+      .price-and-desc p {
+        color: #283136;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .price-and-desc .btn {
+        display: block;
+        width: 140px;
+        margin-top: 30px;
+        padding: 10px 0;
+
+        font-size: 18px;
+
+        background-color: #fb565a;
+      }
+
+    .catalog-item:hover .price-and-desc {
+      display: block;
     }
 
   .catalog-paginator .btn {
