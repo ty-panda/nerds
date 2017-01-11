@@ -99,7 +99,7 @@
     <!-- О нашей студии -->
     <div class="about-us container clearfix">
       <section class="about-us-left">
-          <b>Мы &#8212; маленькая, но гордая дизайн-студия из Краснодара.</b>
+        <b>Мы &#8212; маленькая, но гордая дизайн-студия из Краснодара.</b>
         <p>
           Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
         </p>
@@ -167,5 +167,21 @@
       </p>
     </div>
   </footer>
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть"></button>
+    <form class="send-form" action="#" method="post">
+      <div class="name-block">
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div class="email-block">
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" type="text" name="email" placeholder="Для отправки ответа">
+      </div>
+      <label for="message">Текст письма:</label>
+      <textarea name="message" id="message" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+  </div>
 </body>
 </html>
