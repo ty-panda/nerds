@@ -39,6 +39,24 @@
       <div class="sorting">
         <form class="sorting-form" action="#" method="get">
           <fieldset>
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale"><div style="margin-left: 0; margin-right: 40px;" class="bar"></div></div>
+                <div class="toogle min-toogle"></div>
+                <div class="toogle max-toogle"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input name="min-price" type="text" value="0">
+                </label>
+                <label class="max-price">
+                  до <input name="max-price" type="text" value="15 000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
             <legend>Сетка:</legend>
             <ul class="layout-choice-list">
               <li>
@@ -244,11 +262,11 @@
     <form class="send-form" action="#" method="post">
       <div class="name-block">
         <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        <input id="name" type="text" name="name" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
       </div>
       <div class="email-block">
         <label for="email">Ваш e-mail:</label>
-        <input id="email" type="text" name="email" placeholder="Для отправки ответа">
+        <input id="email" type="text" name="email" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
       </div>
       <label for="message">Текст письма:</label>
       <textarea name="message" id="message" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
