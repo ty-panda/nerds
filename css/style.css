@@ -1125,6 +1125,16 @@ body {
   background-color: #fb565a;
 }
 
+.contacts .btn-contact:hover {
+    background-color: #d6494d;
+    cursor: pointer;
+  }
+
+.contacts .btn-contact:active {
+    background-color: #b63538;
+    box-shadow: inset 0 2px 2px rgba(0,0,0,.3);
+}
+
 .main-footer {
   min-height: 120px;
   padding-top: 96px;
@@ -1202,6 +1212,26 @@ body {
   background-color: #fff;
   box-shadow: 0 20px 40px rgba(0,1,1,.75);
 
+}
+
+@keyframes bounce {
+  0% { transform: translateY(1000px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.modal-content-show {
+  display: block;
+  animation: bounce .6s;
+}
+
+.modal-error {
+  animation: shake .6s;
 }
 
 .modal-content-close {
