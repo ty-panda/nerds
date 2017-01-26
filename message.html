@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NЁRDS - обратная связь</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="inner-page">
+  <!-- Шапка -->
+  <header class="main-header">
+    <div class="container">
+      <!-- Лого и главное меню -->
+      <div class="header-top clearfix">
+        <figure class="header-logo">
+          <a href="#">
+            <img src="images/logo.png" alt="NЁRDS" width="139" height="56">
+          </a>
+        </figure>
+        <nav class="main-nav">
+          <ul>
+            <li class="active"><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+            <a class="trash" href="#">Корзина</a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Основное содержание -->
+  <main class="container">
+    <form class="send-form" action="#" method="post">
+      <div class="name-block">
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+      </div>
+      <div class="email-block">
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" type="text" name="email" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+      </div>
+      <label for="message">Текст письма:</label>
+      <textarea name="message" id="message" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="main-footer">
+    <div class="container clearfix">
+      <section class="footer-social">
+        <a class="social-btn" href="#"><i class="icon-vkontakte"></i></a>
+        <a class="social-btn" href="#"><i class="icon-facebook"></i></a>
+        <a class="social-btn" href="#"><i class="icon-instagram"></i></a>
+      </section>
+      <p class="footer-promo">
+        <span>Давайте дружить, это выгодно!</span>
+        Скидка 10% для друзей из социальных сетей.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
